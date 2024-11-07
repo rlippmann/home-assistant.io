@@ -153,13 +153,14 @@ triggers:
         last_event_type: doorbell_detected
 ```
 
-### `Using Secret Alerts for Sensor Changes`
+### Using Secret Alerts for Sensor Changes
 
 For cases where the default poll time of 30 seconds is too long for creating automations, you can use Secret Alerts to get push notifications of a sensor being triggered.
 
 Steps:
+
 - Enable the secret alert for the device in the Simplisafe App
-- Make a note of the serial number of the device (it should be in the top, left corner on the page where you set the alert
+- Make a note of the serial number of the device (it should be in the top, left corner on the page where you set the alert)
 - use the following event trigger:
 
   ```yaml
@@ -168,10 +169,12 @@ Steps:
       event_type: SIMPLISAFE_EVENT
       event_data:
           last_event_type: secret_alert_triggered
-          last_event_sensor_serial: (the serial number of the device, use lowercase for letters)
+          last_event_sensor_serial: "abc123xyz"  # Replace with your device's serial number (use lowercase letters)
   ```
 
-**Note:** Due to the way Simplisafe implements secret alerts, you can only determine when a sensor is triggered, not when it is cleared.
+{% note %}
+Due to the way Simplisafe implements secret alerts, you can only determine when a sensor is triggered, not when it is cleared.
+{% endnote %}
 
 ### `SIMPLISAFE_NOTIFICATION`
 
