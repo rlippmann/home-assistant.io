@@ -153,7 +153,7 @@ triggers:
         last_event_type: doorbell_detected
 ```
 
-### Using Secret Alerts for Sensor Changes
+### Using secret alerts for sensor changes
 
 For cases where the default {% term polling %} interval of 30 seconds is too long for automations, you can use secret alerts to get push notifications of a sensor being triggered.
 
