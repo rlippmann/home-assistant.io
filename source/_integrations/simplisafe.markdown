@@ -157,7 +157,7 @@ triggers:
 
 For cases where the default {% term polling %} interval of 30 seconds is too long for automations, you can use secret alerts to get push notifications of a sensor being triggered.
 
-Steps:
+To enable secret alerts for sensor changes, follow these steps:
 
 - Enable the secret alert for the device in the Simplisafe App
 - Make a note of the serial number of the device (it should be in the top, left corner on the page where you set the alert)
