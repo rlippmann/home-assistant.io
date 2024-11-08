@@ -155,7 +155,7 @@ triggers:
 
 ### Using Secret Alerts for Sensor Changes
 
-For cases where the default poll time of 30 seconds is too long for creating automations, you can use Secret Alerts to get push notifications of a sensor being triggered.
+For cases where the default {% term polling %} interval of 30 seconds is too long for automations, you can use secret alerts to get push notifications of a sensor being triggered.
 
 Steps:
 
