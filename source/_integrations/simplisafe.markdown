@@ -159,9 +159,10 @@ For cases where the default {% term polling %} interval of 30 seconds is too lon
 
 To enable secret alerts for sensor changes, follow these steps:
 
-- Enable the secret alert for the device in the Simplisafe App
-- Make a note of the serial number of the device (it should be in the top, left corner on the page where you set the alert)
-- use the following event trigger:
+1. Enable the secret alert for the device in the Simplisafe App.
+2. Make a note of the serial number of the device.
+    - You can see it in the top-left corner of the page where you set the alert.
+3. Use the following event trigger:
 
   ```yaml
   triggers:
